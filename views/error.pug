@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  img(src=storeData.logo, alt="logo")
+  h1 Resumen de tu compra: #{product}
+  hr
+  p Tienda: #{storeData.name}
+  p Dominio: #{storeData.domain}
+  p Teléfono: #{storeData.phone}
+  p Dirección Comercial: #{storeData.address}
+  p Monto cargado a la tarjeta: #{amount}
+  p Moneda: Soles
+  
+  p Mensaje Visanet: Transacción No realizada

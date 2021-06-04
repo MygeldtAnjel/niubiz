@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 #{product} - monto a pagar S/. #{amount}
+
+  div
+    form(action='/visa/respuesta', method='post')
+      script(
+        src='https://static-content.vnforapps.com/v2/js/checkout.js?qa=true',
+        data-sessiontoken = sessionKey,
+        data-channel = 'web',
+        data-merchantid = merchantId,
+        data-merchantlogo = logo,
+        data-formbuttoncolor = '#D80000',
+        data-purchasenumber = purchaseNumber,
+        data-amount = amount,
+        data-expirationminutes= '5',
+        data-buttonsize = 'MEDIUM',
+        data-buttoncolor = 'GRAY',
+        data-merchantname = 'REY PASTOR',
+        data-cardholderemail = email,
+        data-cardholdername = name,
+        data-cardholderlastname = lastName,
+        data-timeouturl = domain + '/visa/timeout')

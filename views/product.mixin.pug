@@ -1,0 +1,10 @@
+mixin product(prod)
+  .card
+    img.card-img-top(src="/images/product.jpg", alt="img")
+    .card-body
+      h5.card-body= prod.title
+      p.card-text S/ #{prod.price}
+      form(action="/pagar", method="post")
+        input(type="hidden", name="amount", value=prod.price)
+        input(type="hidden", name="product", value=prod.title)
+        input.btn.btn-primary(type="submit", value="Pagar")

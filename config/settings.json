@@ -1,0 +1,22 @@
+
+{
+    "visanet": {
+        "user": "integraciones@niubiz.com.pe",
+        "password": "_7z3@8f",
+        "merchantId": "456879852",
+        "env": "dev"
+    },
+    "url": "https://concebirapp.meteorapp.com/pago-visanet",
+    "store": {
+        "domain": "www.concebir.com",
+        "logo": "https://4.bp.blogspot.com/-ZgZlxuO2c0U/V6KLWQhogkI/AAAAAAAAzb8/e2WnsBezlSYkk88TGjnYsgJ-HxzJ6FqhgCLcB/s1600/boticas-rey-pastor.jpg",
+        "name": "CONCEBIR",
+        "phone": "99999999",
+        "address": "La Molina",
+        "links": {
+            "devolucion": "https://concebirapp.meteorapp.com",
+            "tyc": "https://concebirapp.meteorapp.com"
+        },
+        "message": "Por favor imprima y el guarde este recibo para dejar constancia de su transacción"
+    }
+}

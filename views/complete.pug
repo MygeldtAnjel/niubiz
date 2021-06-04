@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  img(src=storeData.logo, alt="logo")
+  h1 Recibo: #{product}
+  hr
+  p Tienda: #{storeData.name}
+  p Dominio: #{storeData.domain}
+  p Teléfono: #{storeData.phone}
+  p Dirección Comercial: #{storeData.address}
+  p Número de Pedido: #{payload['order'].purchaseNumber}
+  p Tarjeta: #{payload['dataMap'].CARD}
+  p Fecha de la Transaccion: #{payload['header'].ecoreTransactionDate}
+  p Monto cargado a la tarjeta: #{payload['dataMap'].AMOUNT}
+  p Moneda: Soles
+  p Mensaje Visanet: #{payload['dataMap'].ACTION_DESCRIPTION}
+  p Politicas de Devolución 
+    a(href=storeData.links.devolucion target="_blank") click aquí
+  p Términos y Condiciones: 
+    a(href=storeData.links.tyc target="_blank") click aquí
+  p #{storeData.message} 

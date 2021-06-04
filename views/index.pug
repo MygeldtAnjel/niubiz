@@ -1,0 +1,14 @@
+extends layout
+
+include product.mixin.pug
+
+block content
+  h1 Productos
+  div.row
+    .col-4
+      +product({title: 'Producto 1', price: 5.50})
+    .col-4
+      +product({title: 'Producto 2', price: 120.20})
+    .col-4
+      +product({title: 'Producto 3', price: 5201.76})
+
